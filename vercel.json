@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "/back/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "rewrites": [
+    { "source": "/chat", "destination": "/back/server.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
