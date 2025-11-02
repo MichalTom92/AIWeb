@@ -2,7 +2,7 @@
   "name": "ai-chatbot-project",
   "version": "1.0.0",
   "description": "AI Chatbot with Vercel and Hugging Face",
-  "main": "back/server.js",
+  "main": "api/server.js",
   "scripts": {
     "start": "node back/server.js",
     "vercel-build": "echo 'No build step required'"
