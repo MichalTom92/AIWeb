@@ -10,9 +10,7 @@ const port = 3000;
 
 // Inicjalizacja klienta Hugging Face
 const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
-console.log("Odczytany klucz API:", process.env.HUGGINGFACE_API_KEY); // Linia do debugowania
-// Zmieniamy model na Llama-3, który jest nowszy i bardzo stabilny.
-const modelName = "EleutherAI/gpt-neo-125M";
+const modelName = "meta-llama/Meta-Llama-3-8B-Instruct";
 
 // Treść z Twojego PDF
 const pdfContent = `
