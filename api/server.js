@@ -9,7 +9,7 @@ const port = 3000;
 // --- KONFIGURACJA ---
 
 // Inicjalizacja klienta Hugging Face
-const hf = new HfInference(process.env.HUGGINGFACE_API_KEY, { endpointUrl: "https://router.huggingface.co/hf-inference/" });
+const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
 const modelName = "mistralai/Mistral-7B-Instruct-v0.3";
 
 // Treść z Twojego PDF
