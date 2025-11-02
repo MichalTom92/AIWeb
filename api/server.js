@@ -67,9 +67,6 @@ ${pdfContent}
     }
 });
 
-// Usuwamy app.listen(), ponieważ Vercel sam zarządza uruchamianiem serwera.
-// Zamiast tego eksportujemy naszą aplikację, aby Vercel mógł jej użyć.
-module.exports = app;
-
-// Lokalnie serwer już się nie uruchomi komendą `node back/server.js`,
-// ale będzie działał idealnie po wdrożeniu na Vercel.
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Serwer działa i nasłuchuje na porcie ${port}`);
+});
