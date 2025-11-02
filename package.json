@@ -1,11 +1,10 @@
 {
   "name": "ai-chatbot-project",
   "version": "1.0.0",
-  "description": "AI Chatbot with Vercel and Hugging Face",
+  "description": "AI Chatbot with Hugging Face",
   "main": "api/server.js",
   "scripts": {
-    "start": "node api/server.js",
-    "vercel-build": "echo 'No build step required'"
+    "start": "node api/server.js"
   },
   "dependencies": {
     "@huggingface/inference": "^2.7.0",

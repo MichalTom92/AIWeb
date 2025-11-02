@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const { HfInference } = require('@huggingface/inference');
-// Usunięto require('dotenv'), ponieważ Vercel zarządza zmiennymi środowiskowymi.
+
 
 const app = express();
 const port = 3000;
