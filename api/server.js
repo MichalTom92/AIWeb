@@ -9,7 +9,7 @@ const port = 3000;
 // --- KONFIGURACJA ---
 
 // Inicjalizacja klienta Hugging Face
-const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
+const hf = new HfInference(process.env.HUGGINGFACE_API_KEY, { endpointUrl: "https://router.huggingface.co/hf-inference/" });
 const modelName = "meta-llama/Meta-Llama-3-8B-Instruct";
 
 // Treść z Twojego PDF
