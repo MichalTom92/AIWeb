@@ -26,7 +26,6 @@ Nasz email kontaktowy to mikrutcn@gmail.com.
 // --- SERWER ---
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '..')));
 
 app.post('/chat', async (req, res) => {
     const userMessage = req.body.message;
